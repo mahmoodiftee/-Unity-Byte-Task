@@ -6,16 +6,25 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from './HomePage/Home';
+import Layout from './Layout';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <Home />
+      }
+    ]
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <div className='max-w-screen-xl mx-auto border min-h-screen text-center px-2'>
+      <RouterProvider router={router} />
+    </div>
   </React.StrictMode>
 );
