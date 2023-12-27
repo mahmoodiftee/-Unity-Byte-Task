@@ -9,9 +9,9 @@ const Slider1 = () => {
     }, []);
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 overflow-hidden">
-      {slides.map((slide, index) => (
-        <div key={index} className="flex flex-col gap-4 mb-10">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden">
+            {slides.map((slide, index) => (
+                <div key={index} className="flex flex-col md:flex-row gap-4 mb-10">
                     <figure className="h-60 w-full"><img className="h-full w-full object-cover" src={slide.img} alt="" /></figure>
                     <div className="flex flex-col justify-center px-4 md:px-0">
                         <div className="flex justify-start">
