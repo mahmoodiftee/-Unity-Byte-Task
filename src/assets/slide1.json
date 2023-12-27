@@ -1,0 +1,35 @@
+[
+    {
+      "img": "https://i.ibb.co/fMRHvm8/1.png",
+      "title": "Enigma Stealth Walker",
+      "price1": "$800",
+      "price2": "$1200",
+      "des": "Unveil the secrets of the unseen with the Enigma Stealth Walker. A mystifying journey awaits with every step.",
+      "rating": 2
+    },
+    {
+      "img": "https://i.ibb.co/cyFZrsk/2.png",
+      "title": "Shadow Whispers Sneaker",
+      "price1": "$1100",
+      "price2": "$1500",
+      "des": "Listen closely to the Shadow Whispers Sneaker as it carries untold tales through the echoes of every stride.",
+      "rating": 4
+    },
+    {
+      "img": "https://i.ibb.co/Y3Rw3b5/3.png",
+      "title": "Cipher Code Slip-On",
+      "price1": "$670",
+      "price2": "$980",
+      "des": "Decipher the language of style with the Cipher Code Slip-On, where every design holds a hidden message.",
+      "rating": 0
+    },
+    {
+      "img": "https://i.ibb.co/hy8dV6c/4.png",
+      "title": "Phantom Essence Athletic",
+      "price1": "$1270",
+      "price2": "$2254",
+      "des": "Experience the ethereal essence of sport with the Phantom Essence Athletic. Unseen prowess in every motion.",
+      "rating": 3
+    }
+  ]
+  
