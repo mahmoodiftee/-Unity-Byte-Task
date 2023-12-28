@@ -2,10 +2,8 @@ import { useState } from "react";
 import Slider1 from "../Component/Slider1";
 import Slider2 from "../Component/Slider2";
 import Slider3 from "../Component/slide3";
-import {
-    BsFillArrowLeftCircleFill,
-    BsFillArrowRightCircleFill,
-} from "react-icons/bs";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+
 
 const Home = () => {
     const slides = [
@@ -41,12 +39,13 @@ const Home = () => {
                 ))}
             </div>
 
-            <div className="absolute top-0 h-full w-full justify-between items-center flex text-black px-10 text-3xl">
-                <button onClick={previousSlide}>
-                    <BsFillArrowLeftCircleFill />
+            <div className="absolute top-0 h-full w-full justify-between items-center flex text-black/70 px-10 text-3xl">
+                <button className="bg-white rounded-full p-4 shadow-lg" onClick={previousSlide}>
+                    <MdKeyboardArrowLeft  />
                 </button>
-                <button onClick={nextSlide}>
-                    <BsFillArrowRightCircleFill />
+                <div  className="bg-gray-100 w-full h-[3px]"></div>
+                <button  className="bg-white rounded-full p-4 shadow-lg"onClick={nextSlide}>
+                    <MdKeyboardArrowRight  />
                 </button>
             </div>
         </div>

@@ -5,8 +5,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import "./index.css";
-import Home from './HomePage/Home';
 import Layout from './Layout';
+import Sliders from './Sliders';
 
 const router = createBrowserRouter([
   {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Sliders />
       }
     ]
   },
