@@ -1,9 +1,11 @@
-import Home from "./HomePage/Home";
+import SliderOne from "./HomePage/SliderOne";
+import SliderTwo from "./HomePage/SliderTwo";
 
 const Sliders = () => {
     return (
         <div>
-            <Home/>
+            <SliderOne/>
+            <SliderTwo/>
         </div>
     );
 };

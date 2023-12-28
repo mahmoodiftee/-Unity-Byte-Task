@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import data from "../assets/slide1.json";
-import { FaHeart, FaSearch } from "react-icons/fa";
-import { GrPowerCycle } from "react-icons/gr";
+import data from "../../assets/slide2.json";
 
-const Slider1 = () => {
+const Slider2 = () => {
     const [slides, setSlides] = useState([]);
 
     useEffect(() => {
@@ -11,25 +9,10 @@ const Slider1 = () => {
     }, []);
 
     return (
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden px-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 overflow-hidden">
             {slides.map((slide, index) => (
                 <div key={index} className="flex flex-col md:flex-row gap-4 my-20">
-                    <figure className="h-60 relative w-full">
-                        <img className="h-full w-full object-cover" src={slide.img} alt="" />
-                        <div className="Overlay-Container h-full w-full absolute bg-black top-0 opacity-[50%]">
-                            <div className="h-full flex gap-2 justify-center items-center">
-                                <button className="bg-white text-gray-900 font-extrabold text-xl rounded-full p-4 shadow-lg">
-                                    <FaHeart />
-                                </button>
-                                <button className="bg-white text-gray-900 font-extrabold text-xl rounded-full p-4 shadow-lg">
-                                    <GrPowerCycle />
-                                </button>
-                                <button className="bg-white text-gray-900 font-extrabold text-xl rounded-full p-4 shadow-lg">
-                                    <FaSearch />
-                                </button>
-                            </div>
-                        </div>
-                    </figure>
+                    <figure className="h-60 w-full"><img className="h-full w-full object-cover" src={slide.img} alt="" /></figure>
                     <div className="flex flex-col justify-center px-4 md:px-0">
                         <div className="flex justify-start">
                             {[...Array(5)].map((_, starIndex) => (
@@ -54,4 +37,4 @@ const Slider1 = () => {
     );
 };
 
-export default Slider1;
+export default Slider2;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import data from "../assets/slide2.json";
+import data from "../../assets/slide3.json";
 
-const Slider2 = () => {
+const Slider3 = () => {
     const [slides, setSlides] = useState([]);
 
     useEffect(() => {
@@ -37,4 +37,4 @@ const Slider2 = () => {
     );
 };
 
-export default Slider2;
+export default Slider3;

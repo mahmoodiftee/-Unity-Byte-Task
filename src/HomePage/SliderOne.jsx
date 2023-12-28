@@ -1,11 +1,11 @@
 import { useState } from "react";
-import Slider1 from "../Component/Slider1";
-import Slider2 from "../Component/Slider2";
-import Slider3 from "../Component/slide3";
+import Slider1 from "../Component/SkiderOne/Slider1";
+import Slider2 from "../Component/SkiderOne/Slider2";
+import Slider3 from "../Component/SkiderOne/slide3";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 
-const Home = () => {
+const SliderOne = () => {
     const slides = [
         <Slider1 />,
         <Slider2 />,
@@ -25,6 +25,7 @@ const Home = () => {
 
     return (
         <div className="overflow-hidden relative">
+            <h1 className="text-4xl font-extrabold uppercase text-center">Slider 1</h1>
             <div
                 className={`flex transition ease-out duration-40`}
                 style={{
@@ -52,4 +53,4 @@ const Home = () => {
     );
 };
 
-export default Home;
+export default SliderOne;
